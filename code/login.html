@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #b7f565;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            background-color: #1f4d3a;
+            color: #b7f565;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .nav-actions button {
+            margin-left: 10px;
+            padding: 6px 12px;
+            border: none;
+            background-color: #2e7d5b;
+            color: #b7f565;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* LAYOUT */
+        .container {
+            display: flex;
+            margin-top: 10px;
+        }
+
+        .sidebar,
+        .rightbar {
+            width: 20%;
+            padding: 15px;
+        }
+
+        .feed {
+            width: 60%;
+            padding: 15px;
+        }
+
+        /* SIDEBAR */
+        .menu-item {
+            padding: 10px;
+            margin-bottom: 8px;
+            background-color: #b7f565;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        /* POST BOX */
+        .create-post {
+            background-color: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .create-post textarea {
+            width: 100%;
+            resize: none;
+            padding: 10px;
+        }
+
+        .create-post button {
+            margin-top: 10px;
+            background-color: #1f4d3a;
+            color: #b7f565;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+        }
+
+        /* POSTS */
+        .post {
+            background-color: #b7f565;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .post-actions button {
+            margin-right: 10px;
+            border: none;
+            background-color: #e0e0e0;
+            padding: 6px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* RIGHT PANEL */
+        .right-card {
+            background-color: #ffffff;
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <div class="logo">GreenBook</div>
+        <div class="nav-actions">
+            <button>Home</button>
+            <button>Profile</button>
+            <button>Logout</button>
+        </div>
+    </div>
+
+    <!-- MAIN LAYOUT -->
+    <div class="container">
+
+        <!-- LEFT SIDEBAR -->
+        <div class="sidebar">
+            <div class="menu-item">News Feed</div>
+            <div class="menu-item">Friends</div>
+            <div class="menu-item">Messages</div>
+            <div class="menu-item">Groups</div>
+        </div>
+
+        <!-- FEED -->
+        <div class="feed">
+
+            <!-- CREATE POST -->
+            <div class="create-post">
+                <textarea placeholder="What's on your mind?"></textarea>
+                <button>Post</button>
+            </div>
+
+            <!-- POSTS -->
+            <div class="post">
+                <h4>User Name</h4>
+                <p>This is a sample post content.</p>
+                <div class="post-actions">
+                    <button>Like</button>
+                    <button>Comment</button>
+                </div>
+            </div>
+
+            <div class="post">
+                <h4>Another User</h4>
+                <p>Another example post in your feed.</p>
+                <div class="post-actions">
+                    <button>Like</button>
+                    <button>Comment</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- RIGHT SIDEBAR -->
+        <div class="rightbar">
+            <div class="right-card">
+                <strong>Sponsored</strong>
+                <p>Ad content here</p>
+            </div>
+
+            <div class="right-card">
+                <strong>Contacts</strong>
+                <p>Friend 1</p>
+                <p>Friend 2</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="logo">PhotoBook</div>
+
+</body>
+
+</html>
