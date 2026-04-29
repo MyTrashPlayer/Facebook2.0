@@ -1,4 +1,43 @@
 #logo{
-    position: absolute;
-    color: #2049d1;
+    position: relative;
+    color: #ce1d52;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 70%;
+    padding: 12px 30px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #e1e1e1;
+    border-radius: 30px;
+    font-size: 16px;
+    font-family: inherit;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border-color: #3498db;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+button {
+    display: inline-block;
+    align-items: center;
+    padding: 14px 26px;
+    margin-left: 10px;
+    margin-top: 5px;
+    background: black;
+    color: #fafafa;
+    text-decoration: none;
+    border-radius: 30px;
+    border:none;
+    font-weight:400;
+    font-family: inherit;
 }
