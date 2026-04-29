@@ -1,0 +1,133 @@
+#logo {
+    position: absolute;
+    color: #0b5a18;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #b7f565;
+}
+
+/* NAVBAR */
+.navbar ul {
+    background-color: #1f4d3a;
+    color: #b7f565;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    position: relative;
+}
+
+.navbar li {
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.nav-item {
+    position: relative;
+    text-decoration: none;
+    font-size: 25px;
+    font-style: normal;
+}
+
+.tooltip {
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background-color: #0c5f05;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    display: transparent;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+
+}
+
+.nav-item:hover .tooltip {
+    opacity: 1;
+}
+
+/* LAYOUT */
+.container {
+    display: flex;
+    margin-top: 10px;
+}
+
+.sidebar,
+.rightbar {
+    width: 20%;
+    padding: 15px;
+}
+
+.feed {
+    width: 60%;
+    padding: 15px;
+}
+
+/* SIDEBAR */
+.menu-item {
+    padding: 10px;
+    margin-bottom: 8px;
+    background-color: #b7f565;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* POST BOX */
+.create-post {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.create-post textarea {
+    width: 100%;
+    resize: none;
+    padding: 10px;
+}
+
+.create-post button {
+    margin-top: 10px;
+    background-color: #1f4d3a;
+    color: #b7f565;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* POSTS */
+.post {
+    background-color: #b7f565;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.post-actions button {
+    margin-right: 10px;
+    border: none;
+    background-color: #e0e0e0;
+    padding: 6px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* RIGHT PANEL */
+.right-card {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
